@@ -3,40 +3,21 @@
 #include <math.h>
 using namespace std;
 void show(int n)
-{
-    int count = 0; //Đếm các số nguyên tố nhỏ hơn n
-    for (int i = 2; i < n; i++)
-    {
-        for (int k = 2; i % k != 0;)
-        {
-            k++;
-            if (k == i)
-            {
-                cout << i << " "; //in ra các số nguyên tố nhỏ hơn n
-                count += 1;
-                break;
-            }
-        }
+{   
+    int count = 0;
+    for(int i=1; i<int(sqrt(n)); i++) {
+        cout << pow(i, 2) << " ";
+        count++;
     }
-    cout << '\n'
-         << "Tong: " << count + 1 << " so NT.";
+    cout << endl;
+    cout << "Co tong cong: " << count << " so chinh phuong nho hon " << n;
 }
 int main()
 {
     int n;
-    cout << "Nhap n: ";
+    cout <<  "Nhap n: " ; 
     cin >> n;
-    cout << endl;
-    if (n > 2)
-    {
-        cout << "Cac So Nguyen To nho hon " << n << " la: " << endl;
-        cout << "2 ";
-        show(n);
-    }
-    else if (n == 2)
-    {
-        cout << "2 la so nguyen to nho nhat!";
-    }
-    cout << "Thanh dep trai";
+    cout << "Cac so chinh phuong nho hon n la: ";
+    show(n);
     return 0;
 }
