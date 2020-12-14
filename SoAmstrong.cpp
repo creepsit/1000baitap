@@ -35,7 +35,7 @@ int main()
 {   
     int a;
     cout << "Nhap a: "; cin >> a;
-    cout << "Các số Amstrong nhỏ hơn " << a << " là: ";
+    cout << "Cac so Amstrong nho hon " << a << " la: ";
     for(int i=1; i<a; i++)
      
      if (TONGcacchuso(i) == i)
