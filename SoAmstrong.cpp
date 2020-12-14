@@ -19,7 +19,7 @@ int sochuso(int n) // Tính số chữ số
     }
     return count;
 }
-int TONGcacchuso(int n) //Tổng "(các chữ số)^(số chữ số)
+int TONGcacchuso(int n) 
 {
     int k = sochuso(n);
     int sum = 0;
